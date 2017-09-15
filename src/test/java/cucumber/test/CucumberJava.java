@@ -47,11 +47,14 @@ public class CucumberJava {
 		URL url=new URL("http://localhost:4444/wd/hub");
 		
 		driver = new RemoteWebDriver(url, cap);
+		
+		logger.info("Gosho was here");
 	}
 
 	@When("^I open Google website$")
 	public void goToGoogle() {
 		driver.get("https://www.google.bg");
+		logger.warn("Spas was here");
 	}
 	
 	@Then("^Login button should exits$")
@@ -61,6 +64,7 @@ public class CucumberJava {
 		} else {
 			System.out.println("Test 1 Fail");
 		}
+		logger.error("Harry was here");
 		driver.quit();
 	}
 }
