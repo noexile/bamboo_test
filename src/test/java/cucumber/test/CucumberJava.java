@@ -24,13 +24,7 @@ import io.github.bonigarcia.wdm.ChromeDriverManager;
 
 public class CucumberJava {
 	WebDriver driver = null;
-    final TestAppender appender = new TestAppender();
-	final Logger logger = Logger.getRootLogger();
-	
-	@Before
-	private void init() {
-		logger.addAppender(appender);
-	}
+	final Logger logger = Logger.getLogger(CucumberJava.class);
 	
 	
 	@Given("^I have open the browser$")
