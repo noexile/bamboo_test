@@ -33,21 +33,21 @@ formatter.match({
   "location": "CucumberJava.openBrowser()"
 });
 formatter.result({
-  "duration": 3786336804,
+  "duration": 3539231776,
   "status": "passed"
 });
 formatter.match({
   "location": "CucumberJava.goToGoogle()"
 });
 formatter.result({
-  "duration": 3712176558,
+  "duration": 4140112397,
   "status": "passed"
 });
 formatter.match({
   "location": "CucumberJava.loginButton()"
 });
 formatter.result({
-  "duration": 135843424,
+  "duration": 90173679,
   "status": "passed"
 });
 });

@@ -27,7 +27,7 @@ public class CucumberJava {
 	WebDriver driver = null;
 	final Logger logger = Logger.getLogger(CucumberJava.class);
 	
-	
+	@Test
 	@Given("^I have open the browser$")
 	public void openBrowser() throws MalformedURLException {
 //		FirefoxDriverManager.getInstance().setup();
@@ -45,13 +45,15 @@ public class CucumberJava {
 		
 		logger.info("Gosho was here");
 	}
-
+	
+	@Test
 	@When("^I open Google website$")
 	public void goToGoogle() {
 		driver.get("https://www.google.bg");
 		logger.warn("Spas was here");
 	}
 	
+	@Test
 	@Then("^Login button should exits$")
 	public void loginButton() {
 		if (driver.findElement(By.name("btnK")).isEnabled()) {
